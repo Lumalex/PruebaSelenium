@@ -30,8 +30,8 @@ public class Prueba {
 
   @Before
   public void setUp() throws Exception {
-	DesiredCapabilities cap = DesiredCapabilities.firefox();
-	((DesiredCapabilities)cap).setBrowserName("firefox");
+	DesiredCapabilities cap = DesiredCapabilities.chrome();
+	((DesiredCapabilities)cap).setBrowserName("chrome");
 	//((DesiredCapabilities)cap).setPlatform(Platform.WINDOWS);
     driver = new RemoteWebDriver(new URL("http://192.168.95.68:4444/wd/hub"),cap);
     baseUrl = "https://www.katalon.com/";
